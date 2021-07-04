@@ -25,8 +25,8 @@ namespace Company.Function
             log.LogInformation(requestBody);
 
             dynamic data = JsonConvert.DeserializeObject(requestBody);            
-            
-            return new OkObjectResult(data);
+
+            return new OkObjectResult(req);
         }
     }
 }
